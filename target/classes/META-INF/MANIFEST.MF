@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: econometricosDeyvid
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: jose
+Implementation-Vendor-Id: com.econo
+Build-Jdk: 1.8.0_144
+Implementation-URL: http://projects.spring.io/spring-boot/econometrico
+ sDeyvid/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,241 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+  	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps."></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"></meta>
+    <title>Modelos Econometricos</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"></meta>
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png"></link>
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"></meta>
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite"></meta>
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png"></link>
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"></meta>
+    <meta name="msapplication-TileColor" content="#3372DF"></meta>
+
+    <link rel="shortcut icon" href="images/favicon.png"></link>
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css"></link>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{../css/styles.css}"></link>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{../css/materialize.min.css}"></link>
+     <link rel="stylesheet" type="text/css" media="all" th:href="@{../css/tooltipster.bundle.min.css}"></link>
+  
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" th:src="@{../js/materialize.js}"></script>
+     <script type="text/javascript" th:src="@{../js/tooltipster.bundle.min.js}"></script>
+    
+     <script type="text/javascript" th:src="@{../js/validateForm.js}"></script>
+    
+     
+  
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+    
+  </head>
+  <body>
+  
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Carga</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search"></input>
+              <label class="mdl-textfield__label" for="search">Enter your query...</label>
+            </div>
+          </div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+            <li class="mdl-menu__item">Legal information</li>
+          </ul>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+<!--           <img src="/images/umgsimbolo.png" class="demo-avatar"></img> -->
+          <div class="demo-avatar-dropdown">
+            <span>MODELOS ECONOMETRICOS</span>
+            <div class="mdl-layout-spacer"></div>
+           
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+            <a class="mdl-navigation__link" href="/"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Inicio</a>
+         <a class="mdl-navigation__link" href="/empleado/listEmpleado"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_circle</i>Agregar Empleado</a>
+           <a class="mdl-navigation__link" href="/datosdinamicos/uploadDinamic"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">compare_arrows</i>Carga Dinamica</a>
+          <a class="mdl-navigation__link" href="/insertRegistros"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">add_box</i>Agregar Registro</a>
+          <a class="mdl-navigation__link" href="/periodo/listPeriodo"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">date_range</i>Agregar Variable</a>
+          <a class="mdl-navigation__link" href="/unploadExcel"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">add_circle</i>Agregar Masivamente</a>
+           <a class="mdl-navigation__link" href="/getRegistros"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">input</i>Realizar Consultas</a>
+          <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">multiline_chart</i>Minimos Cuadrados</a>
+          <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">show_chart</i>Dispersion</a>
+
+
+          <div class="mdl-layout-spacer"></div>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+     	
+	     <div class="mdl-grid demo-content">
+	     <p style="text-align:center"> <h1>CREACION DE VARIABLES DE AFECTO A VENTAS</h1></p>
+	     <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+		        
+		       
+				<form action="#" th:action="@{/createPeriodo}" th:object="${periodo}" method="post" style="width: 100%;" id="formularioCreatePeriodo" name="formularioCreatePeriodo">
+			    <table class="responsive-table" >
+			    <thead>
+			    <th colspan="4">Informacion de las variables que afecta a las ventas</th>
+			    </thead>
+			    <tbody>
+			    	<tr>
+			    		<td><span>Descripción del variable de afecto</span>
+			    		</td>
+			    		<td colspan="2">
+			    			<input type="text" name="descripcion" id="descripcion"/>
+			    		</td>
+			    	</tr>
+			    	<tr>
+			    		<td colspan="1">
+			    		<span>Indique la fecha de inicio de la variable</span>
+			    		</td>
+			    		<td>
+			    		<input type="text" name="inicio" class="datepicker" id="inicio"/>
+			    		</td>
+			    		
+			    	</tr>
+			    	<tr>
+			    		<td colspan="1">
+			    		<span>Indique la fecha fin de la variable</span>
+			    		</td>
+			    		<td>
+			    		<input type="text" name="fin" class="datepicker" id="fin"/>
+			    		</td>
+			    		
+			    	</tr>
+			    	<tr id="categorias">
+			    		<td>
+			    		<span>Seleccione una categoria de productos</span>
+			    		</td>
+			    		<td colspan="2">
+			    			<select  style="display: block;"  name="categoria" id="categoria">
+			    			<option value="">Seleccionar...</option>
+						    <option th:each="cate : ${categoria}" th:value="${cate.id}" th:text="${cate.descripcion}"></option>
+						    </select>
+			    		</td>
+			    	</tr>
+			    	<tr id="porcentajes">
+			    		<td   >
+			    		<span>Ingrese el valor del afecto en porcentaje + o -</span>
+			    		</td>
+			    		<td colspan="2">
+			    			<input type="text" name="porcentaje" id="porcentaje"/>
+			    		</td>
+			    	</tr>
+			    	
+			    	<tr>
+			    	<td></td>
+			    		<td style="text-align: right;">
+			    		<input class="btn waves-effect waves-light" type="button" value="Guardar" id="enviarPeriodo" />
+			    		</td>
+			    	</tr>
+			    </tbody>
+			    
+			    </table>
+			    </form>
+			    </div>
+          </div>
+      </main>
+    </div>
+    
+      
+      
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+     <script th:inline="javascript">
+     $('.datepicker').pickadate({
+   	  monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+   	  weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+   	  today: 'Hoy',
+   	  clear: 'Limpiar',
+   	  format:'dd/mm/yyyy',
+   	  formatSubmit: 'yyyy/mm/dd',
+       selectMonths: true, // Creates a dropdown to control month
+       selectYears: 15, // Creates a dropdown of 15 years to control year,
+       close: 'Cerrar',
+       closeOnSelect: false, // Close upon selecting a date,
+       editable: false,
+     });
+     
+     
+     
+     $(document).ready(function() {
+    	 $( "#opcion" ).change(function() {
+    		 console.log($("#opcion").val());
+        	 if ($("#opcion").val() == 3)
+        		 {
+        		 $("#porcentajes").css("display", "none");
+        	
+        		 }
+        	 else{
+        		
+        		 $("#porcentajes").css("display", "table-row");
+        	 }
+         });
+    	 $('#enviarPeriodo').click(function(){
+    		 $("#formularioCreatePeriodo").submit();
+ 			}); 
+    	 
+ 
+    	});
+     
+     
+     </script>
+  </body>
+</html>
